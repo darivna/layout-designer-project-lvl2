@@ -1,0 +1,14 @@
+$main-font: 18px/1.5 "Roboto", sans-serif;
+$main-color: #cacaca;
+$main-bg: #08020d;
+$desc-h1: bold 60px/90px "Roboto-Bold", sans-serif;
+$desc-h2: bold 38px/57px "Roboto-Bold", sans-serif;
+$mob-h1: bold 30px/45px "Roboto-Bold", sans-serif;
+$mob-h2: bold 18px/27px "Roboto-Bold", sans-serif;
+
+.desc-h1,
+.desc-h2,
+.mob-h1,
+.mob-h2 {
+    text-transform: uppercase;
+}
