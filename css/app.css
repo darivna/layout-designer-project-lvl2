@@ -114,7 +114,7 @@ body {
   outline: none;
 }
 
-#page-description {
+.main-header {
   padding-top: 150px;
   padding-bottom: 200px;
   margin: 0 auto;
@@ -218,7 +218,7 @@ body {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    row-gap: 18px;
+    row-gap: 15px;
   }
   .nav {
     -webkit-box-orient: vertical;
@@ -229,8 +229,12 @@ body {
 }
 
 @media screen and (max-width: 597px) {
-  #page-description {
+  .main-header {
     padding-top: 81px;
+  }
+  .logo-text {
+    font-weight: bold;
+    color: #FFFFFF;
   }
   .nav {
     position: relative;
@@ -239,7 +243,7 @@ body {
     font-weight: bold;
   }
   .header-h1 {
-    font: bold 30px/45px "Roboto-Bold", sans-serif;
+    font: bold 30px/44px "Roboto-Bold", sans-serif;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
@@ -259,6 +263,95 @@ body {
   }
   .header-button {
     grid-column: span 1;
+  }
+}
+
+.banner-artist {
+  background-image: url("/src/images/Morten Harket.png");
+}
+
+.page-artist-description {
+  padding-top: 200px;
+  padding-bottom: 223px;
+}
+
+.header-artist-h1,
+.header-artist-description {
+  text-align: left;
+}
+
+.header-artist-description {
+  padding-top: 16px;
+  padding-bottom: 31px;
+}
+
+.header-artist-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.artist-btn {
+  width: 200px;
+  height: 62px;
+  padding: 20px 30px;
+  font-size: 12.8px;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.artist-btn-first {
+  background: #5328A1;
+}
+
+.artist-btn-first span {
+  position: relative;
+  padding-left: 36px;
+}
+
+.artist-btn-first span::before {
+  position: absolute;
+  left: 0;
+  background-image: url("/src/images/play-button.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  content: "";
+}
+
+.artist-btn-second {
+  background: #95390C;
+}
+
+.artist-btn-second span {
+  position: relative;
+  padding-left: 36px;
+}
+
+.artist-btn-second span::before {
+  position: absolute;
+  left: 0;
+  background-image: url("/src/images/heart.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  content: "";
+}
+
+@media screen and (max-width: 597px) {
+  .page-artist-description {
+    padding-top: 57px;
+  }
+  .header-artist-btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 24px;
   }
 }
 
@@ -341,6 +434,10 @@ body {
   padding: 64px 0;
   font: normal 13px/1.5 "Roboto", sans-serif;
   text-align: center;
+}
+
+.pricing-btn {
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -498,7 +595,6 @@ body {
 
 .btn {
   display: inline-block;
-  width: 100%;
   height: 66px;
   padding-top: 21px;
   padding-bottom: 21px;
